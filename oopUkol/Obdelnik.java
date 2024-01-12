@@ -1,16 +1,18 @@
 package oopUkol;
 
 public class Obdelnik extends Obrazec {
-    private double stranaA;
-    private double stranaB;
+    private double strana2;
 
-    public Obdelnik(double stranaA, double stranaB) {
-        this.stranaA = stranaA;
-        this.stranaB = stranaB;
+    public Obdelnik(double strana1, double strana2) {
+        this.strana = strana1;
+        strana2 = strana2;
+        this.obvod = 2 * (strana1 + strana2);
+        this.obsah = strana1 * strana2;
+        jmeno = "Obdelnik";
     }
 
     @Override
     public String toString() {
-        return String.format("Jsem obdelnik s stranami %.1f a %.1f, s obvodem %.1f a obsahem %.1f", stranaA, stranaB, 2 * (stranaA + stranaB), stranaA * stranaB);
+        return String.format("Jsem %s se stranami A = %.1f a B = %.1f, s obvodem %.1f a obsahem %.1f", jmeno, strana, strana2, obvod, obsah);
     }
 }
