@@ -1,21 +1,2 @@
-# OOP assigment
-
-# In this assigment I was asked to create Java classes so this code will work
-
-```Java
-public class Obrazce {
-public static void main(String[] args) {
-  Obrazec[] tvary = new Obrazec[5];
-  tvary[0] = new RovnostrannyTrojuhelnik(6);
-  tvary[1] = new Kruh(3.5);
-  tvary[2] = new Ctverec(2);
-  tvary[3] = new Obdelnik(4, 11);
-  tvary[4] = new Obdelnik(5, 5);
-
-  for (Obrazec o: tvary)
-    System.out.println(o);
-  }
-}
-```
-
-I had to create a abstract class and overwrite the toString method so it prints out a shape perimeter and content
+# This is my repository of Java projects and assigments from my school
+## Every package is a different project with its own read me
