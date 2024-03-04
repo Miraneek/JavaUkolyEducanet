@@ -28,6 +28,7 @@ public class Main {
 
         System.out.println("Napište náhodné číslo mezi 5000 a 10000 obsahující den narození (Například když jsem se narodil 12., můžu si jako x zvolit 7012, 5412 apod.): ");
         int randomNumber = Integer.parseInt(scanner.nextLine());
+        randomNumber = randomNumber < 5000 ? 5000 : randomNumber > 10000 ? 10000 : randomNumber;
 
         long startTime = System.currentTimeMillis();
 
@@ -58,8 +59,10 @@ public class Main {
     private static Fraction getDateFraction() {
         System.out.println("month: ");
         int month = Integer.parseInt(scanner.nextLine());
+        month = month < 1 ? 1 : month > 12 ? 12 : month;
         System.out.println("day: ");
         int day = Integer.parseInt(scanner.nextLine());
+        day = day < 1 ? 1 : day > 31 ? 31 : day;
 
         if (day == month) {
             day++;
