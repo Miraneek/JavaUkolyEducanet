@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("gimme birthday: ");
         /*
-        Počítá s tím, že uživet napíše správne datum narození.
+        Počítá s tím, že uživetel napíše správne datum narození.
          */
         Fraction birthDay = getDateFraction();
 
