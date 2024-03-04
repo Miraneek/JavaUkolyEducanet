@@ -9,7 +9,7 @@ package Fractions;
  * @since 13.2.2024
  */
 
-public class Fraction {
+public class Fraction implements Comparable<Fraction> {
     /**
      * The numerator of the fraction.
      */
@@ -148,5 +148,18 @@ public class Fraction {
     @Override
     public String toString() {
         return numerator + "/" + denominator;
+    }
+
+    @Override
+    public int compareTo(Fraction other) {
+        return this.numerator * other.denominator - this.denominator * other.numerator;
+    }
+
+    public int getDenominator() {
+        return denominator;
+    }
+
+    public int getNumerator() {
+        return numerator;
     }
 }
