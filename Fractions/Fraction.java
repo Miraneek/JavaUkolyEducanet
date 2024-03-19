@@ -45,13 +45,13 @@ public class Fraction implements Comparable<Fraction> {
         this.denominator = denominator / nsd;
     }
 
-    @Override
     /**
      * Overrides the equals method to compare two Fraction objects for equality.
      *
      * @param o The object to compare with this Fraction.
      * @return True if the fractions are equal, false otherwise.
      */
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
