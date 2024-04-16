@@ -24,7 +24,6 @@ public class Main {
         box.getTool("Bosh screwdriver").work();
         box.getTool("Rusty saw").work();
 
-        System.out.println(box.getNumberOfBothHandedHammers());
-
+        System.out.println(box.getWeightOfAllBothHandedHammers());
     }
 }
